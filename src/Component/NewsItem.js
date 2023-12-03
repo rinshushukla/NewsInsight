@@ -10,6 +10,8 @@ export class NewsItem extends Component {
           <div className="card-content">
             <p>{title}</p>
             <p>{description}...</p>
+            <p>{publishedAt}...</p>
+            <p>Author:- {author}...</p>
             <a href={newsUrl} >Read more</a>
            </div>
         </div>
