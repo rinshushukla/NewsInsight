@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import { Link }from "react-router-dom"
+import Model from "react-modal";
+import { useState } from 'react';
+
+
 
 export class Navbar extends Component {
+    
     static propTypes = {
 
     }
 
     render() {
+        
         return (
             <div>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -37,8 +43,21 @@ export class Navbar extends Component {
                                 </li>
                                 <li children="navitem"> <Link  className="nav-link" to="/entertainment"> Entertainment </Link>
                                 </li>
+                               
 
                             </ul>
+                            
+
+                                
+                                <button onClick={()=>setvisible(true)}type="button" class="btn btn-success">Signin/SignUP</button>
+                            <Model isOpen={false}>
+                            <h1>
+                                Hello
+                            </h1>
+                            
+            
+                            </Model>
+                            
                             
                         </div>
                     </div>
