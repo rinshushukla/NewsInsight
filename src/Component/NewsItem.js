@@ -11,7 +11,7 @@ export class NewsItem extends Component {
             <p>{title}</p>
             <p>{description}...</p>
             <p>{publishedAt}...</p>
-            <p>Author:- {author}...</p>
+            <p>Author:- {author ? author:'Unknown'}...</p>
             <a href={newsUrl} >Read more</a>
            </div>
         </div>
